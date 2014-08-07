@@ -36,6 +36,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/vitality.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
+Plugin 'rking/ag.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,7 +84,7 @@ set backspace=indent,eol,start
 let g:ctrlp_map = '<Leader>f'
 
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
-nmap <Leader>a :Ack<space>
+nmap <Leader>a :Ag<space>
 
 inoremap jk <esc>
 
