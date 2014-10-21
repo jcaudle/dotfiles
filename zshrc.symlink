@@ -45,7 +45,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler brew chruby gem nanoc npm tmux tmuxinator vagrant)
+plugins=(git brew gem nanoc npm tmux tmuxinator vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,5 +64,12 @@ export EDITOR='vim'
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias vimconfig="vim ~/.vimrc"
+alias reload="source ~/.zshrc"
 
-chruby 2.1.2
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# point help at the right place
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
