@@ -68,8 +68,11 @@ alias vimconfig="vim ~/.vimrc"
 alias reload="source ~/.zshrc"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/usr/local/go/bin"
 
 # point help at the right place
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
+
+source $ZSH/oh-my-zsh.sh
