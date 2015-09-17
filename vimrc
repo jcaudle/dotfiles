@@ -102,6 +102,7 @@ inoremap <silent> jk <esc>:update<CR>
 nnoremap <silent> <Leader>s :update<CR>
 
 nnoremap <silent> <Leader>p :set paste!<CR>
+nnoremap <silent> <Leader>n :set number!<CR>
 
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
