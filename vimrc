@@ -93,6 +93,7 @@ nnoremap <silent> <Leader>[ :A<CR>
 nnoremap <silent> <Leader>r :source ~/.vimrc<CR>
 nnoremap <silent> <Leader>z :edit ~/.zshrc<CR>
 nnoremap <silent> <Leader>v :edit ~/.vimrc<CR>
+nnoremap <silent> <Leader>c :edit ~/.tmux.conf<CR>
 
 nnoremap <silent> <Leader>b :set background=dark<CR>
 nnoremap <silent> <Leader>w :set background=light<CR>
