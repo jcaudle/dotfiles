@@ -74,10 +74,7 @@ export NVM_DIR="/Users/jcaudle/.nvm"
 
 eval "$(hub alias -s)"
 
-alias zcon="vim ~/.zshrc"
 alias omz="vim ~/.oh-my-zsh"
-alias vcon="vim ~/.vimrc"
-alias tcon="vim ~/.tmux.conf"
 alias reload="source ~/.zshrc"
 alias modified="git status --porcelain | grep '^.[^D]' | cut -c 3-"
 alias gcb="git checkout -b"
@@ -93,6 +90,10 @@ export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 export PATH="$PATH:./bin"
 
 export DOTFILES_PATH="$HOME/.dotfiles"
+
+alias zcon="vim $DOTFILES_PATH/zshrc"
+alias vcon="vim $DOTFILES_PATH/vimrc"
+alias tcon="vim $DOTFILES_PATH/tmux.conf"
 
 export HOMEBREW_GITHUB_API_TOKEN="df0e09345860fe117d3470ae71257c114aedecbf"
 
