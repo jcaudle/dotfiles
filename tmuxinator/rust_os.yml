@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dnsimple.yml
+# ~/.tmuxinator/rust_projects.yml
 
-name: dnsimple
-root: ~/aetrion/dnsimple
+name: rust_os
+root: ~/code/rust_projects/rust_os
 
 # Optional tmux socket
 # socket_name: foo
@@ -17,9 +17,6 @@ root: ~/aetrion/dnsimple
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
-startup_window: editor
 
 windows:
-  - logs: tail -f log/development.log
-  - editor: vim
-  - server: foreman start
+  - zsh:

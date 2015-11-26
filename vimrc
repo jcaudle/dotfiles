@@ -91,9 +91,9 @@ nnoremap <silent> <Leader>d :GundoToggle<CR>
 nnoremap <silent> <Leader>[ :A<CR>
 
 nnoremap <silent> <Leader>r :source ~/.vimrc<CR>
-nnoremap <silent> <Leader>z :edit ~/.zshrc<CR>
-nnoremap <silent> <Leader>v :edit ~/.vimrc<CR>
-nnoremap <silent> <Leader>c :edit ~/.tmux.conf<CR>
+nnoremap <silent> <Leader>z :edit $DOTFILES_PATH/zshrc<CR>
+nnoremap <silent> <Leader>v :edit $DOTFILES_PATH/vimrc<CR>
+nnoremap <silent> <Leader>c :edit $DOTFILES_PATH/tmux.conf<CR>
 
 nnoremap <silent> <Leader>b :set background=dark<CR>
 nnoremap <silent> <Leader>w :set background=light<CR>
@@ -104,11 +104,13 @@ nnoremap <silent> <Leader>s :update<CR>
 nnoremap <silent> <Leader>p :set paste!<CR>
 nnoremap <silent> <Leader>n :set number!<CR>
 
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>e :TestSuite<CR>
-nmap <silent> <leader>i :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
+nmap <silent> <Leader>t :TestNearest<CR>
+nmap <silent> <Leader>T :TestFile<CR>
+nmap <silent> <Leader>e :TestSuite<CR>
+nmap <silent> <Leader>i :TestLast<CR>
+nmap <silent> <Leader>h :TestVisit<CR>
+
+nmap <silent> <Leader>g :Gstatus<CR>
 
 " Eye kan speel
 inoremap acocunt account
