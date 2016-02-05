@@ -99,4 +99,6 @@ export HOMEBREW_GITHUB_API_TOKEN="df0e09345860fe117d3470ae71257c114aedecbf"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 2.2
+chruby ruby
+
+eval "$(/Users/jcaudle/.chefvm/bin/chefvm init -)"
