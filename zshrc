@@ -74,6 +74,7 @@ eval "$(hub alias -s)"
 
 alias omz="vim ~/.oh-my-zsh"
 alias reload="source ~/.zshrc"
+alias update="git pull --rebase && bundle install && rake db:migrate"
 alias modified="git status --porcelain | grep '^.[^D]' | cut -c 3-"
 alias gcb="git checkout -b"
 alias gap="git add -p"
@@ -85,7 +86,7 @@ alias pfx="sudo chown -R $(whoami):admin /usr/local"
 export GOPATH="$HOME/code/go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 
-export PATH="$PATH:./bin"
+export PATH="$PATH:./bin:./"
 
 export DOTFILES_PATH="$HOME/.dotfiles"
 
