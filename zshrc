@@ -67,9 +67,6 @@ source $ZSH/oh-my-zsh.sh
 PERL_MB_OPT="--install_base \"/Users/jcaudle/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/jcaudle/perl5"; export PERL_MM_OPT;
 
-export NVM_DIR="/Users/jcaudle/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 eval "$(hub alias -s)"
 
 alias omz="vim ~/.oh-my-zsh"
