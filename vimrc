@@ -34,8 +34,6 @@ Plugin 'janko-m/vim-test'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'lambdatoast/elm.vim'
-Plugin 'lfex/vim-lfe'
-Plugin 'nono/vim-handlebars'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -96,7 +94,7 @@ nnoremap <silent> <Leader>[ :A<CR>
 nnoremap <silent> <Leader>r :source ~/.vimrc<CR>
 nnoremap <silent> <Leader>z :edit $DOTFILES_PATH/zshrc<CR>
 nnoremap <silent> <Leader>v :edit $DOTFILES_PATH/vimrc<CR>
-nnoremap <silent> <Leader>c :edit $DOTFILES_PATH/tmux.conf<CR>
+nnoremap <silent> <Leader>m :edit $DOTFILES_PATH/tmux.conf<CR>
 
 nnoremap <silent> <Leader>b :set background=dark<CR>
 nnoremap <silent> <Leader>w :set background=light<CR>
