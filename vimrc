@@ -66,7 +66,7 @@ filetype plugin indent on    " required
 
 filetype indent on
 
-au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 set number
 set ttimeoutlen=30
@@ -134,3 +134,5 @@ endfunction
 " Find all files in all non-dot directories starting in the working directory.
 " Fuzzy select one of those. Open the selected file with :e.
 nnoremap <leader>f :call SelectaCommand("find * -type f", "", ":e")<cr>
+
+set clipboard=unnamed

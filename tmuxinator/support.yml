@@ -19,5 +19,13 @@ root: ~/aetrion/dnsimple-support
 # tmux_command: byobu
 
 windows:
-  - editor: vim
-  - server: nanoc aco -p 3456
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim
+        -
+  - server:
+      layout: even-horizontal
+      panes:
+        - bundle exec guard
+        - bundle exec nanoc view

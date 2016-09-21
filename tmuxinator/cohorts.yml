@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dnsimple.yml
+# ~/.tmuxinator/cohorts.yml
 
-name: dnsimple
-root: ~/aetrion/dnsimple
+name: cohorts
+root: ~/aetrion/dnsimple-cohorts
 
 # Optional tmux socket
 # socket_name: foo
@@ -17,6 +17,16 @@ root: ~/aetrion/dnsimple
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t cohorts
+
 startup_window: workspace
 
 windows:
@@ -26,4 +36,4 @@ windows:
       panes:
         - vim
         - mine .
-  - server: foreman start
+  - server: bundle exec rails server --port 3984

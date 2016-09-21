@@ -49,7 +49,7 @@ plugins=(git brew gem nanoc npm tmux tmuxinator vagrant)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,12 +78,9 @@ alias gap="git add -p"
 alias pwdserve="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9393, :DocumentRoot => Dir.pwd).start'"
 alias dvim="vim +'set background=dark'"
 alias lvim="vim +'set background=light'"
-alias pfx="sudo chown -R $(whoami):admin /usr/local"
+alias be="bundle exec"
 
-export GOPATH="$HOME/code/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
-
-export PATH="$PATH:./bin:./"
+export PATH="$PATH:$HOME/opt/bin:./bin:."
 
 export DOTFILES_PATH="$HOME/.dotfiles"
 
@@ -91,10 +88,15 @@ alias zcon="vim $DOTFILES_PATH/zshrc"
 alias vcon="vim $DOTFILES_PATH/vimrc"
 alias tcon="vim $DOTFILES_PATH/tmux.conf"
 
+alias mux="tmuxinator"
+
 export HOMEBREW_GITHUB_API_TOKEN="df0e09345860fe117d3470ae71257c114aedecbf"
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby
-
 eval "$(/Users/jcaudle/.chefvm/bin/chefvm init -)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(rbenv init -)"
+
+# added by travis gem
+[ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
