@@ -102,3 +102,10 @@ eval "$(rbenv init -)"
 [ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
 
 eval "$(chef shell-init zsh)"
+
+function set_aws {
+  eval $(awsenv shell $1)
+}
+function login_aws {
+  open $(awsenv console $1)
+}
