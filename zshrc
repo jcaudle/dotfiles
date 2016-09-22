@@ -100,3 +100,5 @@ eval "$(rbenv init -)"
 
 # added by travis gem
 [ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
+
+eval "$(chef shell-init zsh)"
