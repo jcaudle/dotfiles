@@ -94,7 +94,7 @@ nnoremap <silent> <Leader>[ :A<CR>
 nnoremap <silent> <Leader>r :source ~/.vimrc<CR>
 nnoremap <silent> <Leader>z :edit $DOTFILES_PATH/zshrc<CR>
 nnoremap <silent> <Leader>v :edit $DOTFILES_PATH/vimrc<CR>
-nnoremap <silent> <Leader>m :edit $DOTFILES_PATH/tmux.conf<CR>
+nnoremap <silent> <Leader>c :edit $DOTFILES_PATH/tmux.conf<CR>
 
 nnoremap <silent> <Leader>b :set background=dark<CR>
 nnoremap <silent> <Leader>w :set background=light<CR>
@@ -112,6 +112,8 @@ nmap <silent> <Leader>i :TestLast<CR>
 nmap <silent> <Leader>h :TestVisit<CR>
 
 nmap <silent> <Leader>g :Gstatus<CR>
+
+nmap <silent> <Leader>m :!mine %<CR>
 
 " Eye kan speel
 inoremap acocunt account
