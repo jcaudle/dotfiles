@@ -60,8 +60,6 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export PATH="$PATH:./node_modules/.bin"
-
 source $ZSH/oh-my-zsh.sh
 
 PERL_MB_OPT="--install_base \"/Users/jcaudle/perl5\""; export PERL_MB_OPT;
@@ -79,8 +77,6 @@ alias pwdserve="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9393, :Docume
 alias dvim="vim +'set background=dark'"
 alias lvim="vim +'set background=light'"
 alias be="bundle exec"
-
-export PATH="$PATH:$HOME/opt/bin:./bin:."
 
 export DOTFILES_PATH="$HOME/.dotfiles"
 
@@ -100,6 +96,8 @@ eval "$(rbenv init -)"
 
 # added by travis gem
 [ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
+
+export PATH="$PATH:./node_modules/.bin:./bin:."
 
 function set_aws {
   eval $(awsenv shell $1)
