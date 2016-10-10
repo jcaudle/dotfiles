@@ -97,7 +97,7 @@ eval "$(rbenv init -)"
 # added by travis gem
 [ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
 
-export PATH="$PATH:./node_modules/.bin:./bin:."
+export PATH=".:./bin:./node_modules/.bin:$PATH"
 
 function set_aws {
   eval $(awsenv shell $1)
