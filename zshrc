@@ -105,3 +105,6 @@ function set_aws {
 function login_aws {
   open $(awsenv console $1)
 }
+
+export GOPATH=$HOME/code/golang
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
