@@ -77,6 +77,7 @@ alias pwdserve="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9393, :Docume
 alias dvim="vim +'set background=dark'"
 alias lvim="vim +'set background=light'"
 alias be="bundle exec"
+alias berw="brew"
 
 export DOTFILES_PATH="$HOME/.dotfiles"
 
