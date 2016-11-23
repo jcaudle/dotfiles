@@ -26,12 +26,13 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
-Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'janko-m/vim-test'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'neomake/neomake'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -65,6 +66,7 @@ filetype plugin indent on    " required
 filetype indent on
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd! BufWritePost * Neomake
 
 set number
 set ttimeoutlen=30
