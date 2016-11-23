@@ -26,6 +26,7 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -74,6 +75,7 @@ set directory=~/tmp
 set wildmenu
 
 let test#strategy = "dispatch"
+let g:gutentags_cache_dir = '~/.tags_cache'
 
 syntax enable
 colorscheme solarized
