@@ -33,18 +33,16 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'janko-m/vim-test'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'neomake/neomake'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sjl/gundo.vim'
 Plugin 'sjl/vitality.vim'
-Plugin 'slashmili/alchemist.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rails'
+Plugin 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,7 +79,6 @@ set wildmenu
 
 let test#strategy = "dispatch"
 let g:gutentags_cache_dir = '~/.tags_cache'
-let g:alchemist_tag_disable = 1
 
 syntax enable
 colorscheme solarized
