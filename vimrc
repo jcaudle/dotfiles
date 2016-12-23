@@ -67,7 +67,6 @@ filetype plugin indent on    " required
 filetype indent on
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-autocmd! BufWritePost * Neomake
 
 set number
 set ttimeoutlen=30
@@ -110,16 +109,12 @@ nnoremap <silent> <Leader>n :set number!<CR>
 
 nmap <silent> <Leader>t :TestNearest<CR>
 nmap <silent> <Leader>T :TestFile<CR>
-nmap <silent> <Leader>e :TestSuite<CR>
 nmap <silent> <Leader>i :TestLast<CR>
 nmap <silent> <Leader>h :TestVisit<CR>
 
 nmap <silent> <Leader>g :Gstatus<CR>
 
 nmap <silent> <Leader>m :!mine %<CR>
-
-" Eye kan speel
-inoremap acocunt account
 
 " Run a given vim command on the results of fuzzy selecting from a given shell
 " command. See usage below.
