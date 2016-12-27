@@ -1,7 +1,7 @@
 # ~/.tmuxinator/pxblog.yml
 
 name: pxblog
-root: ~/code/pxblog
+root: ~/code/elixir/pxblog
 
 # Optional tmux socket
 # socket_name: foo
