@@ -42,6 +42,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'sjl/vitality.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rails'
 Plugin 'vimwiki/vimwiki'
 
