@@ -87,7 +87,7 @@ alias tcon="vim $DOTFILES_PATH/tmux.conf"
 
 alias mux="tmuxinator"
 
-export HOMEBREW_GITHUB_API_TOKEN="df0e09345860fe117d3470ae71257c114aedecbf"
+export HOMEBREW_GITHUB_API_TOKEN="e05c94373f4999471431c0979be3dd6ec44fdac3"
 
 eval "$(/Users/jcaudle/.chefvm/bin/chefvm init -)"
 
