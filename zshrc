@@ -88,6 +88,8 @@ alias zcon="vim $DOTFILES_PATH/zshrc"
 alias vcon="vim $DOTFILES_PATH/vimrc"
 alias tcon="vim $DOTFILES_PATH/tmux.conf"
 
+alias cdf="cd $DOTFILES_PATH"
+
 alias mux="tmuxinator"
 
 eval "$(/Users/jcaudle/.chefvm/bin/chefvm init -)"
