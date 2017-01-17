@@ -69,7 +69,6 @@ eval "$(hub alias -s)"
 
 alias reload="source ~/.zshrc"
 
-alias update="git pull --rebase && bundle install && rake db:migrate"
 alias modified="git status --porcelain | grep '^.[^D]' | cut -c 3-"
 
 alias gcb="git checkout -b"
@@ -102,13 +101,6 @@ eval "$(rbenv init -)"
 [ -f /Users/jcaudle/.travis/travis.sh ] && source /Users/jcaudle/.travis/travis.sh
 
 export PATH=".:./bin:./node_modules/.bin:$PATH"
-
-function set_aws {
-  eval $(awsenv shell $1)
-}
-function login_aws {
-  open $(awsenv console $1)
-}
 
 export GOPATH=$HOME/code/golang
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
