@@ -67,17 +67,20 @@ PERL_MM_OPT="INSTALL_BASE=/Users/jcaudle/perl5"; export PERL_MM_OPT;
 
 eval "$(hub alias -s)"
 
-alias omz="vim ~/.oh-my-zsh"
 alias reload="source ~/.zshrc"
+
 alias update="git pull --rebase && bundle install && rake db:migrate"
 alias modified="git status --porcelain | grep '^.[^D]' | cut -c 3-"
+
 alias gcb="git checkout -b"
 alias gap="git add -p"
+
 alias pwdserve="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9393, :DocumentRoot => Dir.pwd).start'"
+
 alias dvim="vim +'set background=dark'"
 alias lvim="vim +'set background=light'"
+
 alias be="bundle exec"
-alias berw="brew"
 
 export DOTFILES_PATH="$HOME/.dotfiles"
 
